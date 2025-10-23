@@ -1,0 +1,51 @@
+:root{
+  --bg:#e9fffb;
+  --primary:#0b6b66;
+  --accent:#74fff0;
+  --muted:#e6fff9;
+  --card:#ffffff;
+  --warning:#ffd54d;
+  --success:#7be495;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, sans-serif; margin:0; background: linear-gradient(180deg, #e8fffb 0%, #ffffff 100%);
+
+.topbar{display:flex;align-items:center;gap:12px;padding:10px 18px;background:linear-gradient(90deg,#c6fff3, #7eeae0);box-shadow:0 2px 6px rgba(0,0,0,0.06)}
+.logo{height:48px}
+.container{display:grid;grid-template-columns:260px 1fr 300px;gap:18px;padding:18px}
+.leftpanel{background:var(--card);padding:12px;border-radius:12px;box-shadow:0 5px 20px rgba(0,0,0,0.05)}
+.po-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px;max-height:70vh;overflow:auto}
+.po-item{display:flex;align-items:center;gap:10px;padding:8px;border-radius:8px;background:linear-gradient(90deg, #e9fffb, #f6fff);cursor:pointer;border:1px solid rgba(7,57,51,0.06)}
+.po-item:hover{transform:translateY(-2px)}
+.po-thumb{width:44px;height:44px;border-radius:6px;background:#dff7f2;display:grid;place-items:center;overflow:hidden}
+.po-meta{flex:1}
+.po-label{font-weight:600}
+.po-desc{font-size:12px;color:#466e69}
+
+.mainpanel{display:flex;flex-direction:column;gap:12px}
+.order-card{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 6px 24px rgba(2,32,30,0.06)}
+.order-header{display:flex;justify-content:space-between;align-items:center}
+.os-label{font-size:12px;color:#6a9b97}
+.os-number{font-size:20px;font-weight:700;color:var(--primary);background:linear-gradient(90deg,#eafffb,#d6fff8);padding:8px 12px;border-radius:8px;display:inline-block;margin-top:6px}
+.order-actions .btn{margin-left:8px}
+.btn{padding:10px 14px;border-radius:10px;border:0;cursor:pointer;font-weight:600}
+.btn-primary{background:#00c4a7;color:white}
+.btn-warning{background:#ffcf3d;color:#073933}
+.btn-success{background:#2dd36f;color:white}
+.order-details{margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.detail-card{background:var(--muted);padding:12px;border-radius:10px}
+
+.rightpanel{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 6px 24px rgba(2,32,30,0.06)}
+.machines{display:flex;flex-direction:column;gap:10px}
+.machine{padding:10px;border-radius:8px;background:linear-gradient(90deg,#e9fffb,#f3fff9);border:1px solid rgba(7,57,51,0.05);display:flex;justify-content:space-between;align-items:center}
+.machine .status{font-size:13px;padding:6px 10px;border-radius:20px;background:#e6fff9;color:#075047}
+
+.footer{display:flex;align-items:center;gap:12px;padding:12px 18px;background:transparent;color:#234;position:fixed;left:0;right:0;bottom:0;justify-content:center}
+
+/* modal */
+.modal{position:fixed;inset:0;display:grid;place-items:center;background:rgba(0,0,0,0.35)}
+.modal.hidden{display:none}
+.modal-content{width:420px;background:white;padding:18px;border-radius:12px;box-shadow:0 10px 40px rgba(0,0,0,0.18)}
+.modal-content select, .modal-content textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6f7f3;margin-top:8px}
+.modal-actions{display:flex;justify-content:space-between;margin-top:12px}
+.btn-cancel{background:#f2f2f2;color:#444;border-radius:10px;padding:10px 14px}/* You can add global styles to this file, and also import other style files */
