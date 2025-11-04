@@ -1,0 +1,156 @@
+/* Layout principal */
+.login-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Lado esquerdo */
+.left-section {
+  background-color: #084c4f;
+  color: #bafff2;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 60px 20px;
+}
+
+/* Logo Velora */
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 2.8rem;
+  font-weight: 600;
+  gap: 4px;
+}
+
+.logo .v {
+  color: #a8ffee;
+  font-weight: 800;
+}
+
+.logo .text {
+  color: #a8ffee;
+}
+
+/* Forma semicircular inferior */
+.left-section::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #a8ffee;
+  border-top-right-radius: 100%;
+  border-top-left-radius: 100%;
+  z-index: 0;
+}
+
+/* Texto dentro do círculo */
+.slogan {
+  position: absolute;
+  bottom: 80px;
+  text-align: center;
+  color: #084c4f;
+  z-index: 1;
+}
+
+.slogan p {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.slogan strong {
+  font-weight: 600;
+}
+
+/* Lado direito */
+.right-section {
+  flex: 1;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Caixa de login */
+.login-box {
+  width: 80%;
+  max-width: 350px;
+  text-align: left;
+}
+
+.login-box h2 {
+  color: #056b6f;
+  font-weight: 700;
+  background-color: #a8ffee;
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 15px;
+}
+
+.login-box .sub {
+  margin: 10px 0 25px 0;
+  color: #084c4f;
+  font-weight: 400;
+}
+
+label {
+  display: block;
+  font-weight: 500;
+  color: #084c4f;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #f0f5f5;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  background-color: #a8ffee;
+  color: #084c4f;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: #8fffe0;
+}
+
+.forgot {
+  display: block;
+  text-align: right;
+  color: #084c4f;
+  font-size: 0.85rem;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.register {
+  text-align: center;
+  margin-top: 20px;
+  color: #084c4f;
+  font-size: 0.9rem;
+}
+
+.register a {
+  color: #056b6f;
+  font-weight: 600;
+  text-decoration: none;
+}
