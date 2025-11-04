@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -7,6 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './login.scss'
 })
 export class Login {
+  constructor(private router: Router){}
+  cadastro(){
+    this.router.navigate(['/cadastro'])
+  }
 
 }
 

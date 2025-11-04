@@ -3,63 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Velora - Frontend Prototype</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Velora</title>
+  <link rel="stylesheet" href="styles.scss" />
 </head>
 <body>
-  <header class="topbar">
-    <img src="assets/Velora.png" alt="Velora logo" class="logo">
-    <h1>Velora — Painel de Produção</h1>
-  </header>
-
-  <main class="container">
-    <section class="leftpanel">
-      <h2>Ordens de Produção</h2>
-      <ul id="po-list" class="po-list"></ul>
-    </section>
-
-    <section class="mainpanel">
-      <div id="order-card" class="order-card">
-        <div class="order-header">
-          <div>
-            <div class="os-label">Ordem atual</div>
-            <div id="os-number" class="os-number">OS-12345</div>
-          </div>
-          <div class="order-actions">
-            <button id="start-btn" class="btn btn-primary">Iniciar produção</button>
-            <button id="pause-btn" class="btn btn-warning">Pausar produção</button>
-            <button id="finish-btn" class="btn btn-success">Finalizar produção</button>
-          </div>
-        </div>
-        <div id="order-details" class="order-details">
-          <!-- Details injected by JS -->
-        </div>
-      </div>
-
-      <div id="stop-modal" class="modal hidden">
-        <div class="modal-content">
-          <h3>Tipo de parada</h3>
-          <select id="stop-type-select"></select>
-          <textarea id="stop-desc" placeholder="Detalhe o motivo da parada"></textarea>
-          <div class="modal-actions">
-            <button id="cancel-stop" class="btn btn-cancel">Cancelar parada</button>
-            <button id="send-stop" class="btn btn-primary">Enviar</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <aside class="rightpanel">
-      <h2>Máquinas / Status</h2>
-      <div id="machines" class="machines"></div>
-    </aside>
-  </main>
-
-  <footer class="footer">
-    <img src="assets/images/ska_footer.svg" alt="" style="height:28px; opacity:0.7">
-    <span>Velora Prototype • assets fornecidos</span>
-  </footer>
-
-  <script src="script.js"></script>
+    <app-root></app-root>
 </body>
 </html>
