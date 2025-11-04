@@ -1,1 +1,31 @@
-<p>cadastro works!</p>
+<div class="cadastro-container">
+  <!-- Lado esquerdo -->
+  <div class="left-section">
+    <div class="cadastro-box">
+      <h2>Boas vindas!</h2>
+      <p class="sub">Faça seu cadastro</p>
+
+      <form>
+        <label for="usuario">Usuário</label>
+        <input id="usuario" type="text" placeholder="Código de funcionário" />
+
+        <label for="senha">Senha</label>
+        <input id="senha" type="password" placeholder="até 8 caracteres" />
+
+        <button type="submit" (click)="telaInicial()">Cadastrar</button>
+
+        <p class="login-link">Já possui conta? <a href="#">Faça login</a></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Lado direito -->
+  <div class="right-section">
+    <div class="logo">
+      <span class="v">V</span><span class="text">elora</span>
+    </div>
+
+    <div class="slogan">
+      <p>Eficiência que <strong>transforma></strong></p>
+    </div>
+

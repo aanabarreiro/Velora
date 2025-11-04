@@ -42,11 +42,12 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
+  width: 120%;
   height: 50%;
   background-color: #a8ffee;
-  border-top-right-radius: 100%;
-  border-top-left-radius: 100%;
+  // border-radius: 50%;
+  // border-radius-bottom: 0;
+  border-top-right-radius: 100% 110%;
   z-index: 0;
 }
 

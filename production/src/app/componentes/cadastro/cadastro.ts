@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-cadastro',
@@ -6,6 +7,11 @@ import { Component } from '@angular/core';
   templateUrl: './cadastro.html',
   styleUrl: './cadastro.scss'
 })
-export class Cadastro {
 
+export class Cadastro {
+  constructor (private router: Router){}
+   
+  telaInicial() {
+    this.router.navigate(['/tela-inicial'])
+  }
 }
