@@ -12,6 +12,6 @@ export class Cadastro {
   constructor (private router: Router){}
    
   telaInicial() {
-    this.router.navigate(['/tela-inicial'])
+    this.router.navigate(['/telaInicial'])
   }
 }

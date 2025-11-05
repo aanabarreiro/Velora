@@ -8,10 +8,13 @@ import { Router } from '@angular/router';
   styleUrl: './login.scss'
 })
 export class Login {
-  constructor(private router: Router){}
+  constructor (private router: Router){}
   cadastro(){
     this.router.navigate(['/cadastro'])
-  }
+  } 
 
+  telaInicial(){
+    this.router.navigate(['/telaInicial'])
+  }
 }
 

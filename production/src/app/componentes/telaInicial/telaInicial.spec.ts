@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { CommonModule } from '@angular/common';
+import { TelaInicial } from './telaInicial'
 
-import { TelaInicial } from './tela-inicial';
 
 describe('TelaInicial', () => {
   let component: TelaInicial;
@@ -8,9 +9,9 @@ describe('TelaInicial', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TelaInicial]
-    })
-    .compileComponents();
+      declarations: [TelaInicial], // ✅ para componente normal
+      imports: [CommonModule]
+    }).compileComponents();
 
     fixture = TestBed.createComponent(TelaInicial);
     component = fixture.componentInstance;
