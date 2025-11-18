@@ -14,4 +14,9 @@ export class Cadastro {
   telaInicial() {
     this.router.navigate(['/telaInicial'])
   }
+
+  entrar() {
+    this.router.navigate(['/'])
+
+  }
 }

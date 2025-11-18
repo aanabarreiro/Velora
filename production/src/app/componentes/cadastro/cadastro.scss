@@ -7,11 +7,16 @@
 
 // Lado esquerdo (formulário)
 .left-section {
-  background-color: #ffffff;
+  background-color: bafff2;
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #084c4f;
+  flex-direction: column;
+  position: relative;
+  padding: 60px 20px;
+  overflow: hidden;
 }
 
 .cadastro-box {
