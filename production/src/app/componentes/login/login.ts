@@ -16,7 +16,7 @@ export class Login {
     this.router.navigate(['/cadastro'])
   } 
 
-  entrar(){
+  entrar(){              
     const sufixo = this.codigoFuncionario.slice(-2);
 
     if (sufixo === '34') {
