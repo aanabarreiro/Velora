@@ -1,8 +1,12 @@
+
 <div class="dashboard-container">
-  <!-- Sidebar -->
+
+  <!-- SIDEBAR -->
   <aside class="sidebar">
-    <h3>Pedidos não iniciados</h3>
-    <ul>
+
+    <h3 class="sidebar-title">Pedidos não<br>iniciados</h3>
+
+    <ul class="orders-list">
       <li>OS-58762</li>
       <li>OS-56487</li>
       <li>OS-21653</li>
@@ -11,58 +15,104 @@
     </ul>
   </aside>
 
-  <!-- Main content -->
-  <main class="content">
+    <!-- TOPO -->
     <header class="top-bar">
-      <input type="text" placeholder="🔍 Pesquisar OP" class="search-bar">
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Pesquisar OP" />
+      </div>
+
       <div class="user-info">
         <span>Juliana</span>
-        <i class="fa-regular fa-user-circle"></i>
+        <i class="fa-regular fa-user"></i>
       </div>
     </header>
 
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- CARDS -->
     <section class="cards">
+
+      //
+      <mat-card class="example-card" appearance="outlined">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title> 
+      <h4>Pré recrutimento</h4>
+      <p class="name">Ezequiel</p>
+    </mat-card-title>
+    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="https://material.angular.dev/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+    <button class="btn"><i class="fa-regular fa-clipboard"></i> Acessar OPs em produção</button>
+
+    <div class="status ok"><i class="fa-solid fa-check"></i> Nenhuma OP em atraso</div>
+  </mat-card-content>
+  <mat-card-actions>
+    <button matButton>LIKE</button>
+    <button matButton>SHARE</button>
+  </mat-card-actions>
+</mat-card>
+//
+
       <div class="card">
-        <h4>Pré recurtimento</h4>
-        <p class="name">👤 Ezequiel</p>
-        <button class="btn">🗒️ Acessar OPs em produção</button>
-        <div class="status ok">✔️ Nenhuma OP em atraso</div>
+        <!-- <h4>Pré recrutimento</h4>
+        <p class="name">👤 Ezequiel</p> -->
+
+        <button class="btn"><i class="fa-regular fa-clipboard"></i> Acessar OPs em produção</button>
+
+        <div class="status ok"><i class="fa-solid fa-check"></i> Nenhuma OP em atraso</div>
       </div>
 
       <div class="card">
         <h4>Acabamento</h4>
         <p class="name">👤 Vagner</p>
-        <button class="btn">🗒️ Acessar OPs em produção</button>
-        <div class="status late">⚠️ 3 OPs em atraso</div>
+
+        <button class="btn"><i class="fa-regular fa-clipboard"></i> Acessar OPs em produção</button>
+
+        <div class="status late"><i class="fa-solid fa-triangle-exclamation"></i> 3 OPs em atraso</div>
       </div>
 
       <div class="card">
         <h4>Secagem</h4>
         <p class="name">👤 Luis</p>
-        <button class="btn">🗒️ Acessar OPs em produção</button>
-        <div class="status ok">✔️ Nenhuma OP em atraso</div>
+
+        <button class="btn"><i class="fa-regular fa-clipboard"></i> Acessar OPs em produção</button>
+
+        <div class="status ok"><i class="fa-solid fa-check"></i> Nenhuma OP em atraso</div>
       </div>
 
       <div class="card">
         <h4>Pré acabamento</h4>
         <p class="name">👤 Ezequiel</p>
-        <button class="btn">🗒️ Acessar OPs em produção</button>
-        <div class="status ok">✔️ Nenhuma OP em atraso</div>
+
+        <button class="btn"><i class="fa-regular fa-clipboard"></i> Acessar OPs em produção</button>
+
+        <div class="status ok"><i class="fa-solid fa-check"></i> Nenhuma OP em atraso</div>
       </div>
 
       <div class="card">
         <h4>Expedição</h4>
         <p class="name">👤 Vagner</p>
-        <button class="btn">🗒️ Acessar OPs em produção</button>
-        <div class="status late">⚠️ 2 OPs em atraso</div>
+
+        <button class="btn"><i class="fa-regular fa-clipboard"></i> Acessar OPs em produção</button>
+
+        <div class="status late"><i class="fa-solid fa-triangle-exclamation"></i> 2 OPs em atraso</div>
       </div>
 
       <div class="card">
         <h4>Matéria prima</h4>
         <p class="name">👤 Luis</p>
-        <button class="btn">🗒️ Acessar OPs em produção</button>
-        <div class="status ok">✔️ Nenhuma OP em atraso</div>
+
+        <button class="btn"><i class="fa-regular fa-clipboard"></i> Acessar OPs em produção</button>
+
+        <div class="status ok"><i class="fa-solid fa-check"></i> Nenhuma OP em atraso</div>
       </div>
+
     </section>
+
   </main>
+
 </div>
