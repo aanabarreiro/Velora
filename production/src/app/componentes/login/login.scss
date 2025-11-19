@@ -16,7 +16,7 @@
 
 /* Lado esquerdo */
 .left-section {
-  background-color: #084c4f;
+  background-color: #0D4950;
   color: #bafff2;
   flex: 1;
   display: flex;
@@ -35,18 +35,21 @@
 }
 
 .V{
-  width: 20px;
-  height: 20px;
-}
+  width: 230px;
+//   height: 20px;
+  background-color: rgb(234, 234, 238)255, 255, 255;
+  margin: 0px;
+ }
 
 
-.logo .v {
+// .logo .v {
+//   color: #a8ffee;
+//   font-weight: 800;
+// }
+
+.V .text {
   color: #a8ffee;
-  font-weight: 800;
-}
-
-.logo .text {
-  color: #a8ffee;
+  font-size: xx-large;
 }
 
 /* Forma semicircular inferior */
@@ -104,7 +107,7 @@
   background-color: #a8ffee;
   display: inline-block;
   padding: 6px 16px;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
 .login-box .sub {
