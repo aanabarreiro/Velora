@@ -1,42 +1,37 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-login',
-  imports: [],
+  imports: [CommonModule, FormsModule],
   templateUrl: './login.html',
   styleUrl: './login.scss'
 })
+
 export class Login {
-  codigoFuncionario: string = '';
-  constructor (private router: Router){}
-  
+constructor (private router: Router){}
   
   cadastro(){
     this.router.navigate(['/cadastro'])
-  } 
+  }  
 
-  entrar(){              
-    const sufixo = this.codigoFuncionario.slice(-2);
+  codigoFuncionario: string = '';
 
-    if (sufixo === '34') {
-      
-      // operador
-      this.router.navigate(['/telaInicialOperadores']);
-    
-    } else if (sufixo === '56') {
-      
-      // encarregado
-      this.router.navigate(['/telaInicialEncarregados']);
-    
-    } else if (sufixo === '78') {
-      
-      // tela inicial admin
-      this.router.navigate(['/telaInicial']);
-    
-    } else {
-      alert('Código inválido ou nível de acesso não reconhecido.');
-    }
+  entrar() {              
+  const codigo = String(this.codigoFuncionario).trim();
+  const sufixo = codigo.slice(-2);
+
+  if (sufixo === '34') {
+    this.router.navigate(['/telaInicialOperadores']);
+  } else if (sufixo === '56') {
+    this.router.navigate(['/telaInicialEncarregados']);
+  } else if (sufixo === '78') {
+    this.router.navigate(['/telaInicial']);
+  } else {
+    alert('Código inválido ou nível de acesso não reconhecido.');
   }
+}
 }
 

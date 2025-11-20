@@ -19,6 +19,10 @@
   overflow: hidden;
 }
 
+.facaLogin a:hover{
+  text-decoration: underline;
+}
+
 .cadastro-box {
   width: 80%;
   max-width: 350px;
@@ -29,15 +33,26 @@
   color: #056b6f;
   font-weight: 700;
   background-color: #a8ffee;
-  display: inline-block;
+  display: flex;
   padding: 6px 16px;
-  border-radius: 15px;
+  border-radius: 5px;
+  width: 140px;
+  text-align: center;
+  margin: 0 auto; /* 👈 Centraliza o bloco */
+  justify-content: center; /* 👈 Centraliza o texto dentro do flex */
 }
 
 .cadastro-box .sub {
   margin: 10px 0 25px 0;
   color: #084c4f;
   font-weight: 400;
+  text-align: center;
+
+}
+.text{
+  font-size: xx-large;
+  color: #a8ffee;
+
 }
 
 label {
@@ -87,11 +102,15 @@ button:hover {
   }
 }
 
+.login-link a:hover{
+  text-decoration: underline;
+}
+
 // Lado direito (logo e texto)
 .right-section {
   background-color: #084c4f;
   flex: 1;
-  color: #bafff2;
+  color: #056b6f;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -108,3 +127,22 @@ button:hover {
   font-size: 2.8rem;
   
 }
+.bola::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 110%;
+  height: 50%;
+  background-color: #a8ffee;
+  border-top-left-radius: 160% 230%;
+  z-index: 0;
+}
+
+.slogan{
+  background-color: #056b6f;
+}
+
+ form button {
+  width: 375px;
+ }

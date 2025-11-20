@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
 
 @Component({
   selector: 'app-tela-inicial-encarregados',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './tela-inicial-encarregados.html',
   styleUrl: './tela-inicial-encarregados.scss'
 })

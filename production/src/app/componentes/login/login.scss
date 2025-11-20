@@ -61,8 +61,6 @@
   width: 110%;
   height: 50%;
   background-color: #a8ffee;
-  // border-radius: 50%;
-  // border-radius-bottom: 0;
   border-top-right-radius: 160% 230%;
   z-index: 0;
 }
@@ -187,3 +185,6 @@ button:hover {
 input:hover{
   background-color:#d8f8f8
 }
+ form button {
+  width: 375px;
+ }
