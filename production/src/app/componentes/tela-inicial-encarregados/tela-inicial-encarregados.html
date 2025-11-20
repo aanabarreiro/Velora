@@ -1,1 +1,72 @@
-<p>tela-inicial-encarregados works!</p>
+<div class="page">
+
+  <!-- ===== HEADER ===== -->
+  <header class="topbar">
+    <img class="logo" src="/mnt/data/Captura de Tela (118).png" alt="logo">
+    <div class="user">
+      Márcia
+      <span class="avatar">◯</span>
+    </div>
+  </header>
+
+  <div class="content">
+
+    <!-- ===== SIDEBAR ===== -->
+    <aside class="sidebar">
+      <h3 class="side-title">
+        📋 Pendências
+      </h3>
+
+      <ul class="pending-list">
+        <li *ngFor="let os of pendencias">
+          {{ os }}
+        </li>
+      </ul>
+    </aside>
+
+    <!-- ===== MAIN AREA ===== -->
+    <main class="main">
+
+      <div class="top-section">
+        <h2>Máquinas em funcionamento</h2>
+        <button class="btn-tab">Pré recrutamento</button>
+      </div>
+
+      <div class="machines">
+
+        <!-- CARD – Máquina -->
+        <div class="machine-card" *ngFor="let m of maquinas">
+
+          <h3 class="machine-name">{{ m.nome }}</h3>
+
+          <div class="machine-user">
+            👤 {{ m.usuario }}
+          </div>
+
+          <div class="machine-os">
+            {{ m.os }}
+          </div>
+
+          <p class="time">
+            {{ m.tempo }}
+          </p>
+
+          <!-- Status -->
+          <div class="status"
+               [ngClass]= "{
+                 'status-red': m.status.tipo === 'vermelho',
+                 'status-yellow': m.status.tipo === 'amarelo',
+                 'status-blue': m.status.tipo === 'azul'
+               }">
+            {{ m.status.texto }}
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+
+  </div>
+
+</div>

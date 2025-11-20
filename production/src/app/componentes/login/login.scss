@@ -159,6 +159,10 @@ button:hover {
   text-decoration: none;
 }
 
+.forgot:hover {
+  text-decoration: underline;
+}
+
 .register {
   text-align: center;
   margin-top: 20px;
@@ -170,6 +174,10 @@ button:hover {
   color: #056b6f;
   font-weight: 600;
   text-decoration: none;
+}
+
+.register a:hover{
+  text-decoration: underline;
 }
 
 .input{
