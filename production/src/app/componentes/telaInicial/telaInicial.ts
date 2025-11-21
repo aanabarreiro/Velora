@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
 import {Router} from '@angular/router';
-import { MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-telaInicial',
-  imports: [MatCardModule],
+  imports: [],
   templateUrl: './telaInicial.html',
   styleUrl: './telaInicial.scss'
 })

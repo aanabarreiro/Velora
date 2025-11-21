@@ -7,12 +7,17 @@
   font-family: 'Poppins', sans-serif;
 }
 
+.container{
+  display: flex;
+  flex-direction: column;
+}
 /* Sidebar */
 .sidebar {
   width: 280px;
   background: #043C44;
   color: white;
   padding: 30px 20px;
+  height: 100%;
 }
 
 .sidebar .logo {
@@ -57,40 +62,44 @@
 /* Top bar */
 .top-bar {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 25px;
+  margin-top: 20px;
 }
 
-.search-box {
-  background: #C6F8F3;
-  border-radius: 30px;
-  padding: 10px 15px;
+.conteudo{
   display: flex;
-  align-items: center;
-  width: 45%;
 }
 
-.search-box input {
-  border: none;
-  background: none;
-  outline: none;
-  width: 100%;
-  font-size: 16px;
-}
-
-.search-box i {
-  margin-right: 10px;
-  color: #015C5A;
-  font-size: 18px;
+.gradiente{
+  width: 100vw;
+  height: 10px;
+  background: linear-gradient(135deg, #0d4950, #9AF9ED);  
+  color: white;
 }
 
 .user-info {
   display: flex;
-  align-items: center;
+  width: 100vw;
   gap: 8px;
   font-size: 18px;
   color: #003B3A;
+  justify-content: end;
+  align-items: end;
+}
+
+img .V{
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  height: 10px;
+}
+
+.user-info span {
+  display: flex;
+
+  padding: 10px;
 }
 
 .user-info i {
@@ -100,7 +109,8 @@
 /* Cards */
 .cards {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  flex-direction: row;
+  grid-template-columns: 2fr 2fr 2fr;
   gap: 25px;
 }
 
@@ -109,7 +119,9 @@
   padding: 22px;
   border-radius: 25px;
   text-align: center;
-  box-shadow: 0 2px 6px #00000010;
+  box-shadow: 0 2px 6px #00000010;  
+  width: 250px;
+
 }
 
 .card h4 {
