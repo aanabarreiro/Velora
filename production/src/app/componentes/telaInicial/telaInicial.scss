@@ -91,14 +91,17 @@
 
 img .V{
   display: flex;
-  justify-content: end;
-  align-items: end;
   height: 10px;
+  text-align: left;
+  margin: 2px;
 }
 
 .user-info span {
   display: flex;
-  padding: 10px;
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 0px;
 }
 
 .user-info i {
