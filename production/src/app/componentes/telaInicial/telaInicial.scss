@@ -43,6 +43,7 @@
   padding: 12px 20px;
   text-align: center;
   margin-bottom: 15px;
+  margin-left: 0px;
   font-size: 18px;
   font-weight: 600;
   color: #003B3A;
@@ -137,6 +138,7 @@ img .V{
 .name {
   font-size: 16px;
   margin-bottom: 12px;
+  color: #00514A;
 }
 
 /* Botões */
@@ -146,12 +148,20 @@ img .V{
   border: none;
   width: 100%;
   padding: 12px;
-  border-radius: 15px;
+  border-radius: 25px;
+  text-decoration: none;
   cursor: pointer;
   margin-bottom: 15px;
   font-size: 15px;
   font-weight: 500;
+
+  
 }
+
+.btn:hover{
+    background-color: #104C53;
+  }
+
 
 .btn i {
   margin-right: 8px;
@@ -160,7 +170,7 @@ img .V{
 /* Status */
 .status {
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 8px;
   font-weight: 600;
 }
 
@@ -175,7 +185,7 @@ img .V{
   display: flex;
   background: #E64E4E;
   color: white;
-  text-align: center;
+  justify-content: center;
 }
 
 .header{
