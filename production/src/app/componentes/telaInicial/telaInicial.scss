@@ -174,11 +174,19 @@ img .V{
   font-weight: 600;
 }
 
+.btn svg {
+  margin-bottom: 0px;
+}
+
 .status.ok {
   display: flex;
   background: #C6F8F3;
   color: #00514A;
   justify-content: center;
+}
+
+.status svg{
+  margin-right: 5px;
 }
 
 .status.late {
