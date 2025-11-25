@@ -1,0 +1,90 @@
+.page-container {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  padding: 20px 35px;
+  box-sizing: border-box;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 4px solid #27A9A5;
+}
+
+.logo {
+  height: 45px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  color: #0c3b3c;
+  gap: 10px;
+
+  .icon-user {
+    font-size: 32px;
+    cursor: pointer;
+  }
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 25px;
+  color: #0c3b3c;
+}
+
+.os-box {
+  margin-top: 15px;
+  display: inline-block;
+  background: #98f1e7;
+  padding: 18px 28px;
+  border-radius: 18px;
+  font-size: 40px;
+  font-weight: 700;
+  color: #0c3b3c;
+}
+
+.tipo-parada {
+  background: #1c5c60;
+  display: inline-flex;
+  align-items: center;
+  padding: 18px 30px;
+  border-radius: 22px;
+  margin-left: 25px;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 600;
+  cursor: pointer;
+  gap: 15px;
+
+  .seta {
+    font-size: 22px;
+  }
+}
+
+.textarea-container {
+  margin-top: 40px;
+
+  .label {
+    font-size: 28px;
+    font-weight: 500;
+    color: #0c3b3c;
+    margin-bottom: 12px;
+    display: block;
+  }
+
+  textarea {
+    width: 100%;
+    height: 220px;
+    background: #a3f9f3;
+    border-radius: 30px;
+    border: none;
+    padding: 25px;
+  }
+}
