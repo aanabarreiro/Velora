@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-tela-inicial-operadores',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './tela-inicial-operadores.html',
   styleUrl: './tela-inicial-operadores.scss'
 })

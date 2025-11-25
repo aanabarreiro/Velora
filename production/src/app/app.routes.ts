@@ -11,10 +11,10 @@ export const routes: Routes = [
     {path: '', component: Login},
     {path: 'cadastro', component: Cadastro},
     {path: 'telaInicial', component: TelaInicial},
-    {path: 'telaInicialEncarregados', component: TelaInicialEncarregados},
-    {path: 'telaInicialOperadores', component: TelaInicialOperadores},
-    {path: 'ProducaoIniciada', component: ProducaoIniciada},
-    {path: 'DetalheParada', component: DetalheParada}
+    {path: 'tela-inicial-encarregados', component: TelaInicialEncarregados},
+    {path: 'tela-inicial-operadores', component: TelaInicialOperadores},
+    {path: 'producao-iniciada', component: ProducaoIniciada},
+    {path: 'detalhe-parada', component: DetalheParada}
 ];
 
 
