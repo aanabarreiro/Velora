@@ -11,8 +11,8 @@ export const routes: Routes = [
     {path: '', component: Login},
     {path: 'cadastro', component: Cadastro},
     {path: 'telaInicial', component: TelaInicial},
-    {path: 'telaInicialEncaregados', component: TelaInicialEncarregados},
-    {path: 'TelaInicialOperadores', component: TelaInicialOperadores},
+    {path: 'telaInicialEncarregados', component: TelaInicialEncarregados},
+    {path: 'telaInicialOperadores', component: TelaInicialOperadores},
     {path: 'ProducaoIniciada', component: ProducaoIniciada},
     {path: 'DetalheParada', component: DetalheParada}
 ];

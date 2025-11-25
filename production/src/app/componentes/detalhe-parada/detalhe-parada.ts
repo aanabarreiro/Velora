@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-detalhe-parada',
-  imports: [],
+  imports: [FormsModule, CommonModule],
   templateUrl: './detalhe-parada.html',
   styleUrl: './detalhe-parada.scss',
 })

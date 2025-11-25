@@ -24,9 +24,9 @@ constructor (private router: Router){}
   const sufixo = codigo.slice(-2);
 
   if (sufixo === '34') {
-    this.router.navigate(['/telaInicialOperadores']);
+    this.router.navigate(['/tela-inicial-operadores']);
   } else if (sufixo === '56') {
-    this.router.navigate(['/telaInicialEncarregados']);
+    this.router.navigate(['/tela-inicial-encarregados']);
   } else if (sufixo === '78') {
     this.router.navigate(['/telaInicial']);
   } else {
