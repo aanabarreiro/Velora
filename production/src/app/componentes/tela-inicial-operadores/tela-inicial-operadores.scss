@@ -1,18 +1,27 @@
-/* velora.component.scss */
-
-/* --- Variables to match design --- */
 $bg: #f6fbf9;
 $card-bg: #ffffff;
-$accent-dark: #0a5a57;    // deep teal used in text and finalizar button
-$accent-mid: #47cfc7;     // mint / teal used in header border & left button
-$accent-yellow: #fff759;  // pause button bg (approx)
-$muted: #4b6b6a;          // text muted
-$pill-bg: #bff7ef;        // light pill behind order id
+$accent-dark: #0a5a57;    
+$accent-mid: #47cfc7;     
+$accent-yellow: #fff759;  
+$muted: #4b6b6a;          
+$pill-bg: #bff7ef;       
 $radius-lg: 14px;
 $radius-pill: 18px;
 $shadow: 0 6px 18px rgba(0,0,0,0.08);
 
+.main {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  padding: 15px 30px;
+}
+
+/* Top bar */
 .top-bar {
+  // width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -59,11 +68,7 @@ $shadow: 0 6px 18px rgba(0,0,0,0.08);
   background: white;
   padding: 12px 24px;
   box-shadow: none;
-  .brand-logo {
-    height: 28px;
-    width: auto;
-    object-fit: contain;
-  }
+ 
   .topbar-right {
     .user {
       color: $accent-dark;
@@ -86,11 +91,19 @@ $shadow: 0 6px 18px rgba(0,0,0,0.08);
   }
 }
 
+.V{
+  display: flex;
+  height: 40px;
+  text-align: left;
+  margin: 2px;
+}
+
 /* Center viewport + card */
 .viewport {
   display:flex;
   justify-content:center;
   align-items:flex-start;
+  margin: 20px;
 }
 
 .card {
@@ -137,45 +150,55 @@ $shadow: 0 6px 18px rgba(0,0,0,0.08);
     }
   }
 
+  .left-info{
+    width: 50%;
+  }
+  
+
   .details-grid {
-    // display: grid;
-    // grid-template-columns: 1fr 1.4fr 1fr;
+    width: 100%;
     display: flex;
     flex-direction: row;
     gap: 18px;
     margin-top: 6px;
     margin-bottom: 28px;
-    width: 100px;
+    // width: 100px;
 
     .col {
+      // width: 100%;
+      width: 50%;
       .detail-title {
         color: darken($muted, 6%);
         font-weight: 600;
         margin: 10px 0 4px;
       }
       .detail-value {
-        font-weight: 700;
+        font-weight: 900;
+        font-size: 20px;
         margin: 0 0 8px;
         color: $accent-dark;
+        // width: 100px;
       }
       &.center {
         .big {
           font-size: 18px;
+          width: 250px;
         }
       }
       &.right {
-        text-align: right;
+        // text-align: right;
+        width: 50%;
       }
     }
   }
-  
-  .main {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+  .big{
+    width: 250px;
+    heigth: 80px;
   }
+ 
 
   .actions-row {
+    width: 80%; // caso precise mudar o tamanho desse alterar junto o do MAIN
     display:flex;
     gap: 18px;
     margin-top: 8px;
@@ -242,10 +265,11 @@ $shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
 .top-card {
+  width: 100%;
   display: flex;
   flex-direction: row;
 
   .side-info {
-    margin-left: 40px;
+    // margin-left: 40px;
   }
 }

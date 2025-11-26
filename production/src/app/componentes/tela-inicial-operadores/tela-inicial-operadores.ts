@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tela-inicial-operadores',
@@ -10,6 +11,9 @@ import { CommonModule } from '@angular/common';
 
 
 export class TelaInicialOperadores {
+  constructor(private router: Router) {}
+
+  
   orderNumber = '12345';
   client = '202 - DASS NORDESTE - ITAPIPOCA';
   article = '3404 - NAPA OUTDOOR';
@@ -20,6 +24,11 @@ export class TelaInicialOperadores {
   touch = 'MACIO';
 
   ProducaoIniciada() { console.log('Iniciar produção'); }
-  pauseProduction() { console.log('Pausar produção'); }
+  
+ 
   finishProduction() { console.log('Finalizar produção'); }
+
+  DetalheParada() {
+    this.router.navigate(['/detalhe-parada'])
+  }
 }
