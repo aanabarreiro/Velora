@@ -65,6 +65,7 @@
 /* Top bar */
 .top-bar {
   display: flex;
+
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -140,6 +141,7 @@
   font-size: 16px;
   margin-bottom: 12px;
   color: #00514A;
+  font-weight: bold;
 }
 
 /* Botões */
@@ -197,4 +199,8 @@
   color: #003B3A;
   display: flex;
   flex-direction: column;
+}
+
+.tempo{
+  color: #00514A;
 }
