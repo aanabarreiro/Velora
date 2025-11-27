@@ -59,7 +59,9 @@
   /* Main */
   .main {
     flex: 1;
-    padding: 15px 30px;
+    padding: 5px 20px;
+    margin-left: 2px;
+  
   }
 
   /* Top bar */
@@ -131,25 +133,26 @@
     display: grid;
     flex-direction: row;
     grid-template-columns: 2fr 2fr 2fr;
-    gap: 25px;
+    gap: 5px;
   }
 
   .card {
     background: rgb(242, 248, 247);
     padding: 22px;
-    margin: 20px;
+    padding-top: 10px;
+    margin: 5px;
     border-radius: 25px;
     text-align: left;
     box-shadow: 0 2px 6px #00000010;  
     width: 250px;
-    height: 280px;
+    height: 180px;
   }
 
   .card h4 {
     font-size: 18px;
     font-weight: 600;
     color: #003B3A;
-    margin-top: 5px;
+    margin-top: 2px;
   }
 
   .name {
@@ -174,7 +177,7 @@
     margin-bottom: 15px;
     font-size: 15px;
     font-weight: 500;
-
+    margin-top: 8px;
     
   }
 
