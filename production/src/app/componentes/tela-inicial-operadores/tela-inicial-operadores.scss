@@ -11,6 +11,7 @@ $shadow: 0 6px 18px rgba(0,0,0,0.08);
 
 .main {
   width: 80%;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,32 +27,35 @@ $shadow: 0 6px 18px rgba(0,0,0,0.08);
    width: 100%;
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
-  margin-top: 20px;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-.top-bar > div {
-  display: flex;
-  justify-content: start;
-  align-items: start;
-  margin-right: 300px;
-}
 .conteudo{
   display: flex;
 }
 
 .gradiente{
-  width: 100vw;
+  width: 100dvw;
   height: 10px;
   background: linear-gradient(135deg, #0d4950, #9AF9ED);  
   color: white;
 }
 
+.user-info > div {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  margin-right: 50px;
+}
 
 .user-info {
   display: flex;
   width: 100vw;
-  gap: 8px;
+  // gap: 8px;
   font-size: 18px;
   color: #003B3A;
   justify-content: end;
@@ -107,9 +111,7 @@ $shadow: 0 6px 18px rgba(0,0,0,0.08);
 .V{
   display: flex;
   height: 40px;
-  justify-content: start;
   text-align: left;
-  align-items: left;
   margin: 2px;
 }
 
@@ -127,11 +129,11 @@ $shadow: 0 6px 18px rgba(0,0,0,0.08);
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 34px 44px;
+  padding: 14px 24px;
   border-radius: 4px;
   box-shadow: $shadow;
   position: relative;
-  margin: 20px;
+  margin: 10px;
   .title {
     font-size: 34px;
     margin: 0 0 8px 0;
@@ -207,7 +209,7 @@ $shadow: 0 6px 18px rgba(0,0,0,0.08);
   }
   .big{
     width: 400px;
-    heigth: 80px;
+    height: 80px;
     font-size: 20px;
     font-weight: 900;
 
@@ -242,34 +244,21 @@ $shadow: 0 6px 18px rgba(0,0,0,0.08);
         border-radius: 12px;
       }
       .label {
-        font-size: 18px;
-        text-align:left;
+        font-size: 38px;
+        text-align:center;
+        
       }
     }
 
     .btn-start {
       background: linear-gradient(180deg, lighten($accent-mid, 24%), $pill-bg);
       color: $accent-dark;
+      width: 1000px;
       .icon {
         background: rgba(255,255,255,0.3);
       }
     }
 
-    .btn-pause {
-      background: $accent-yellow;
-      color: $accent-dark;
-      .icon {
-        background: rgba(0,0,0,0.03);
-      }
-    }
-
-    .btn-finish {
-      background: $accent-dark;
-      color: white;
-      .icon {
-        background: rgba(255,255,255,0.06);
-      }
-    }
   }
 }
 

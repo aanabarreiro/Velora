@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -10,6 +11,8 @@ import { CommonModule } from '@angular/common';
 })
 
 export class TelaInicialEncarregados {
+constructor(private router: Router) {}
+
  pendencias = [
     'OS-58762',
     'OS-56487',
@@ -41,5 +44,9 @@ export class TelaInicialEncarregados {
       status: { tipo: 'azul', texto: '2 horas até a finalização' }
     }
   ];
+
+  Voltar () {
+    this.router.navigate(['/telaInicial']);
+  }
 }
 

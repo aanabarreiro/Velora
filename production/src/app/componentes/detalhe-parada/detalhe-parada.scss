@@ -53,6 +53,8 @@ $yellow: #fff759;          // botão cancelar
 
 /* --- Card principal --- */
 .card {
+  display: flex;
+  flex-direction: column;
   margin-top: 90px;
   width: 100%;
   max-width: 900px;
@@ -87,6 +89,7 @@ $yellow: #fff759;          // botão cancelar
     .select-wrap {
       position: relative;
 
+
       select {
         appearance: none;
         background: $accent-dark;
@@ -120,6 +123,7 @@ $yellow: #fff759;          // botão cancelar
       font-size: 24px;
       color: $accent-dark;
       margin-bottom: 10px;
+      // border-radius: 5px;
     }
 
     textarea {
@@ -138,6 +142,7 @@ $yellow: #fff759;          // botão cancelar
   .actions {
     display: flex;
     justify-content: space-between;
+    gap: 15px;
     margin-top: 15px;
 
     .btn {

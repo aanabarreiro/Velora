@@ -23,10 +23,14 @@ export class TelaInicialOperadores {
   purchaseOrder = '14749476';
   touch = 'MACIO';
 
-  ProducaoIniciada() { console.log('Iniciar produção'); }
+  ProducaoIniciada() { 
+    this.router.navigate(['/producao-iniciada'])
+  }
   
  
-  finishProduction() { console.log('Finalizar produção'); }
+  finalizarProducao() { 
+    this.router.navigate(['/tela-inicial-operadores'])
+  }
 
   DetalheParada() {
     this.router.navigate(['/detalhe-parada'])

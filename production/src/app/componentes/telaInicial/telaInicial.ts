@@ -9,7 +9,7 @@ import {Router} from '@angular/router';
 })
 
 export class TelaInicial {
-
+constructor(private router: Router) {}
 pedidosNaoIniciados = ['OS-58762', 'OS-56487', 'OS-21653', 'OS-53109', 'OS-76021'];
 
   setores = [
@@ -20,6 +20,10 @@ pedidosNaoIniciados = ['OS-58762', 'OS-56487', 'OS-21653', 'OS-53109', 'OS-76021
     { nome: 'Expedição', responsavel: 'Vagner', atraso: 1 },
     { nome: 'Matéria prima', responsavel: 'Luis', atraso: 0 },
   ];
+
+  TelaInicialEncarregados() {
+    this.router.navigate(['/tela-inicial-encarregados']);
+  }
 }
 
 
