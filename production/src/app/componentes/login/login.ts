@@ -18,20 +18,27 @@ constructor (private router: Router){}
   }  
 
   codigoFuncionario: string = '';
+  senha: string = '';
+
 
   entrar() {              
   const codigo = String(this.codigoFuncionario).trim();
+  // const senha = String(this.senha)
   const sufixo = codigo.slice(-2);
 
-  if (sufixo === '34') {
+  if (sufixo === '34' && this.senha === '1234') {
     this.router.navigate(['/tela-inicial-operadores']);
-  } else if (sufixo === '56') {
+
+  } else if (sufixo === '56' && this.senha === '3456') {
     this.router.navigate(['/tela-inicial-encarregados']);
-  } else if (sufixo === '78') {
+
+  } else if (sufixo === '78' && this.senha === '5678') {
     this.router.navigate(['/telaInicial']);
+    
   } else {
     alert('Código inválido ou nível de acesso não reconhecido.');
   }
 }
+  
 }
 

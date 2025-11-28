@@ -27,12 +27,11 @@
     </div>
 
     <div class="detail-box">
-      <label class="detail-label">Detalhe o motivo da parada:</label>
-      <textarea [(ngModel)]= "detail" rows="6" placeholder="Digite aqui"></textarea>
+      <textarea [(ngModel)]= "detail" rows="6" placeholder="Digite aqui detalhes sobre a parada ou observações"></textarea>
     </div>
 
     <div class="actions">
-      <button class="btn cancel" (click)="cancel()">Cancelar parada</button>
+      <button class="btn cancel" (click)="cancel()">Cancelar</button>
       <button class="btn send" (click)="submit()">Enviar</button>
     </div>
   </main>
